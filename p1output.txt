@@ -3,6 +3,6 @@ gcc -g p1original.c
 enter four numbers
 1
 2
-3
+1
 4
-sum of fractions of 1,2,3,4,10,8 
+sum of fractions of 1/2,1/4 i= 6 /8 
