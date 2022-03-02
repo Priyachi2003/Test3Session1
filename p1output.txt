@@ -1,1 +1,8 @@
-
+gcc -g p1original.c
+ ./a.out
+enter four numbers
+1
+2
+3
+4
+sum of fractions of 1,2,3,4,10,8 
