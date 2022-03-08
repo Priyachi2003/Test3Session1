@@ -1,47 +1,45 @@
 #include<stdio.h>
 struct _fraction
 {
- int num,den;
+int num,den;
 };
-typedef _fraction Fraction
- Fraction input_fraction();
-{
-  fraction a;
-  printf("enter any number\n");
-  scanf("%d",&a);
-  return a;
-}
-Fraction Largest_fraction(Fraction f1, Fraction f2, Fraction f3)
+typedef struct _fraction Fraction;
 
+Fraction input_fraction()
 {
-  if(f1>f2 && f1>f3)
-    return f1;
-  else if(f2>f3)
-    return f2;
-  else
-    return f3;
-}
-void output(Fraction f1, Fraction f2, Fraction f3, Fraction largest)
+Fraction f;
+  printf("enter the number\n");
+  scanf("%d %d",&f.num,f.den);
+ }
+Fraction smallest_fraction(Fraction f1, Fraction f2, Fraction f3)
 {
-  if(largest==f1)
-    printf("%d is smallest fraction\n",f1);
-  else if(largest==f2)
-    printf("%d is smallest fraction",f2);
+  Fraction x=den1,den2,den3;
+ Fraction num1=num1(x/den1);
+  Fraction num2=num2(x/den2);
+  Fraction num3=num3(x/den3);
+  if(num1<num2 && num1<num3)
+    return num1;
+  else if(num2<num3)
+    return num2;
   else
-    printf("%d is smaleest fraction",f3);
-}
+    return num3;
+  }
+void output(Fraction f1, Fraction f2, Fraction f3, Fraction smallest)
+Fraction num1,num2;
+{if(smallest==num1)
+  printf("%d is smallest fraction\n",f1);
+else if(smallest==num2)
+  printf("%d is smallest fraction\n",f2);
+else
+  printf("%d is smallest fraction\n",f3);
+  }
 int main()
 {
-
-  fraction f1,f2,f3,largest;
-    f1=input_fraction();  
-   f2=input_fraction();  
-   f3=input_fraction();  
-  largest_fraction(f1,f2,f3);
-  output(f1,f2,f3,largest);
-  return largest;
-  
+  Fraction num,den,smallest,f1,f2,f3;
+  num=input_fraction();
+  den=input_fraction();
+  smallest=smallest_fraction();
+  output(f1,f2,f3);
+  return smallest;
   
 }
-
-
